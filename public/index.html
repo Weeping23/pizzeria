@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img class="header-romero" src="./img/romero.png" alt="width=70" height="70">
+        <img class="header-hoja" src="img/hojas.jpeg" alt="">
+        <img class="header-tomate" src="./img/tomate 1.png" alt="">
+        <img class="header-tomate1" src="./img/tomate 2.jpeg" alt="">
+        <header class="header">
+            <img src="img/logopizza1.png" alt="width=35" height="35">
+            <div class="header-element">
+                <h1 id="pizzas"></h1>
+                <h3>PIZZA OF THE MONT</h3>
+            </div>
+            <div class="dropdown">
+                <img class="header-carrito" src="img/CAJAAAA.png">
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-section1">
+                <h4 class="main-section1-text">INFORMATION</h4>
+                <p id="ingredientes" class="main-section1--info"></p>
+                <button class="main-section1--top">+ Add to Toppings</button>
+                <div class="main-section1--cantidad">
+                    <h4 class="main-section-text">SERVINGS</h4>
+                    <div class="cant">
+                        <button onclick="control_cantidadPizzas('RESTA')">-</button>
+                        <p id="cantPizzas" class="cantidad" type="value">0</p>
+                        <button onclick="control_cantidadPizzas('SUMA')">+</button>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section2">
+                <div class="size">
+                    <button onclick="functionS()" class="s">S</button>
+                    <button onclick="functionM()" class="m">M</button>
+                    <button onclick="functionL()" class="l">L</button>
+                </div>
+                <div class="main-section2--siguiente">
+                    <div class="siguiente">
+                        <button onclick="next()"><img src="img/545682.png" class="right"></button>
+                        <button onclick="back()"><img src="img/left.png" class="left"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section3">
+                <h4 class="main-section3--text">PRICE</h4>
+                <p id="precio" class="precio" type="value"></p>
+                <div class="main-section3--add">
+                    <button onclick="addToCart(id)" class="addtocart">Add To Box</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <figure class="footer-img pos0">
+            <img src="./img/margharite.jpeg" id="0">
+        </figure>
+        <figure class="footer-img pos1" id="img">
+            <img src="./img/pepperoni.jpg" id="1">
+        </figure>
+        <figure class="footer-img pos2">
+            <img src="./img/CUATRO-QUESOS.JPG" id="2">
+        </figure>
+        <figure class="footer-img pos3">
+            <img src="./img/hawaiana.jpg" id="3">
+        </figure>
+        <figure class="footer-img pos4">
+            <img src="./img/especial.jpg" id="4">
+        </figure>
+    </footer>
+</body>
+<script src="main.js"></script>
+<script src="app.js"></script>
+
+</html>
